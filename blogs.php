@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashikant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sy-screen.css">
+</head>
+<body>
+
+<?php include 'header.php';?>
+
+<?php include 'frame.php';?>
+
+<div id="blogs">
+    <div class="width">
+        <div class="card1">
+            <h1>What Is Computer?</h1>
+            <p>Stands for "Beginner's All-purpose Symbolic Instruction Code." BASIC is a computer programming language that was developed in the mid-1960s to provide a way for students to write simple computer programs.</p>
+        </div>
+        <div class="card1">
+            <h1>What Is Computer?</h1>
+            <p>Stands for "Beginner's All-purpose Symbolic Instruction Code." BASIC is a computer programming language that was developed in the mid-1960s to provide a way for students to write simple computer programs.</p>
+        </div>
+        <div class="card1">
+            <h1>What Is Computer?</h1>
+            <p>Stands for "Beginner's All-purpose Symbolic Instruction Code." BASIC is a computer programming language that was developed in the mid-1960s to provide a way for students to write simple computer programs.</p>
+        </div>
+        <div class="card1">
+            <h1>What Is Computer?</h1>
+            <p>Stands for "Beginner's All-purpose Symbolic Instruction Code." BASIC is a computer programming language that was developed in the mid-1960s to provide a way for students to write simple computer programs.</p>
+        </div>
+        <div class="card1">
+            <h1>What Is Computer?</h1>
+            <p>Stands for "Beginner's All-purpose Symbolic Instruction Code." BASIC is a computer programming language that was developed in the mid-1960s to provide a way for students to write simple computer programs.</p>
+        </div>
+        <div class="card1">
+            <h1>What Is Computer?</h1>
+            <p>Stands for "Beginner's All-purpose Symbolic Instruction Code." BASIC is a computer programming language that was developed in the mid-1960s to provide a way for students to write simple computer programs.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<?php include 'footer.php';?>
+
+<script src="script.js"></script>
+</body>
+</html>

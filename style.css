@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.togle{
+    display: none;
+}
+.active{
+    border: 1px solid white !important;
+    border-radius: 5px;
+}
+
+
+/* header is Started here  */
+#header{
+    height: 60px;
+    width: 100%;
+    background-color: #252525;  
+}
+#header .width{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;   
+}
+#header .logo{
+    /* border: 2px solid red; */
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#header .logo img{
+    width: 100%;
+    height: 70%;
+}
+#header .menu ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#header .menu ul li{
+    transition: .5s;
+    list-style: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+}
+#header .menu ul li:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#header .menu ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#header .search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#header .search input{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+}
+
+
+
+
+/* <=====================> Frame Css <=====================> */
+#frame {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+}
+#frame img{
+    width: 100%;
+    height: 100%;
+}
+#frame .frame-text{
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);
+}
+#frame .frame-text h1{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#frame .frame-text p{
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* <=====================> flip Css <=====================> */
+#flip-width{
+    width: 80%;
+    margin: 50px auto;
+    /* border: 2px solid red; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 500px;
+    margin: 10px;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: rgba(233, 227, 227, 0.5);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flip-card-front p{
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flip-card-front :nth-child(2){
+    margin: 10px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.flip-card-front img {
+    width: 250px;
+    height: 250px;
+}
+
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(184, 184, 184);
+    color: white;
+    transform: rotatey(180deg);
+}
+
+/* <=====================> About Css <=====================> */
+
+#about{
+    /* border: 2px solid red; */
+    margin: 60px auto;
+    padding: 30px 0;
+    
+    background-color: rgb(223, 223, 223);
+    width: 80%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+#about :nth-child(1){
+    margin-bottom: 5px;
+    color: #1b1b1b;
+    font-size: 2rem;
+}
+#about :nth-child(2){
+    padding-bottom: 20px;
+    color: #252525;
+    font-size: 1rem;
+}
+#about :nth-child(3){
+    margin-bottom: 20px;
+    color: #1b1b1b;
+    font-size: 1.5rem;
+}
+#about :nth-child(4){
+    line-height: 30 px;
+    padding-bottom: 30px;
+    color: #252525;
+    font-size: 1rem;
+}
+#about img{
+   width: 70%;
+   border-radius: 20px;
+}
+
+/* <=====================> photos Css <=====================> */
+#photos{
+    /* border: 2px solid red; */
+    width: 100;
+}
+#photos .width{
+    /* border: 2px solid red; */
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#photos .width .img{
+    /* border: 2px solid red; */
+    width: 300px;
+    margin: 20px;
+}
+#photos .width .img img{
+    box-shadow: -1px -4px 10px 2px rgba(0,0,0,0.56);
+    width: 100%;
+    height: 300px;
+}
+
+/* <=====================> blogs Css <=====================> */
+#blogs .width{
+    /* border: 1px solid red; */
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+#blogs .width .card1{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    background: linear-gradient(#bbb, gray);
+    width: 350px;
+    height: 400px;
+}
+#blogs .width .card1 h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+#blogs .width .card1 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+
+}
+
+/* <=====================> Footer Css <=====================> */
+footer .hover-effect{
+    color: #828282;
+    font-size: 1rem;
+    margin: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer .hover-effect:hover{
+    color: #bbb;
+    cursor: pointer;
+}
+footer .width-fot{
+    width: 100%;
+    background-color: #1b1b1b;
+}
+footer .back{
+    background-color: #1d1d1d;
+}
+footer .width-hed{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+footer .width-hed .card{
+    text-align: left;
+    margin: 20px 20px;
+    width: 250px;   
+}
+footer .width-hed .card h3{
+    color: #0fcabf;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+footer .width-hed .card .contact{
+    margin-top: 20px;
+    color: #828282;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+footer .width-hed .card .hill-top{
+    margin-top: 20px;
+    color: #828282;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+}
+footer .width-hed .card .jc-main{
+    margin-top: 20px;
+    color: #828282;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+
+}
+footer .width-fot div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+footer .width-fot :nth-child(1){
+    color: #828282;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer .width-fot :nth-child(2){
+    text-decoration: none;
+    color: #bbb;
+    font-size: 1.2rem;
+    margin: 10px;
+    transition: .5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer .width-fot :nth-child(2):hover{
+    color: white;
+}
